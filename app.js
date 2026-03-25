@@ -19,10 +19,7 @@ const server = net.createServer((socket) => {
             }
         })
     })
-
    
-
-    
 
     socket.on("end", () => {
         console.log("client disconnected")

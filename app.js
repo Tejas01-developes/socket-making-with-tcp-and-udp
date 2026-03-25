@@ -6,7 +6,7 @@ const server = net.createServer((socket) => {
     console.log("client connected")
 
     clients.push(socket);
-    console.log(socket);
+    console.log(server);
 
 
     socket.on("data", (data) => {
@@ -21,6 +21,8 @@ const server = net.createServer((socket) => {
     })
 
    
+
+    
 
     socket.on("end", () => {
         console.log("client disconnected")
